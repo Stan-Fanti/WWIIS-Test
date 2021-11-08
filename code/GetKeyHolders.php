@@ -18,3 +18,5 @@ print("%s %d %s\n", $contact['name'], $contact['telephone'], $contact['key'])}
 } catch(Exception $exception) {
 echo "An exception occurred!";
 }
+
+?>
