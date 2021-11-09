@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-
-<html  lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Index</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <?php require_once 'LetterCounter.php'; ?>
     </head>
     <body>
-        Test <?php echo "A B C D"; ?>
+        <?php
+            echo "<b>Letter Counter</b><br>";
+            $lc = new LetterCounter();
+            echo $example = "WWIIS Services Ltd";
+            echo "<br>";
+            echo $lc->countLettersInString($example);
+        ?>
     </body>
 </html>
